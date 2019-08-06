@@ -16,16 +16,6 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://cf-platform-eng.github.io/isv-tech-hub/tile_development/index.html</loc>
-     <lastmod>2019-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://cf-platform-eng.github.io/isv-tech-hub/tile_development/common_issues_helps/index.html</loc>
-     <lastmod>2019-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://cf-platform-eng.github.io/isv-tech-hub/tile_development/common_issues_helps/bosh_faq.html</loc>
      <lastmod>2019-08-06</lastmod>
      <changefreq>daily</changefreq>
@@ -36,12 +26,7 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://cf-platform-eng.github.io/isv-tech-hub/tile_development/common_issues_helps/tilegenerator_faq.html</loc>
-     <lastmod>2019-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://cf-platform-eng.github.io/isv-tech-hub/tile_development/good_practices/index.html</loc>
+     <loc>https://cf-platform-eng.github.io/isv-tech-hub/tile_development/common_issues_helps/tile_development_faq.html</loc>
      <lastmod>2019-08-06</lastmod>
      <changefreq>daily</changefreq>
     </url>

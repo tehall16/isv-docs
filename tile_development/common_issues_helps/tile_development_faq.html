@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation related to Pivotal ISV Partners.">
       
       
-        <link rel="canonical" href="https://cf-platform-eng.github.io/isv-tech-hub/tile_development/good_practices/index.html">
+        <link rel="canonical" href="https://cf-platform-eng.github.io/isv-tech-hub/tile_development/common_issues_helps/tile_development_faq.html">
       
       
         <meta name="author" content="Chris Decelles">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Overview - ISV Tech Docs</title>
+        <title>Tile Development FAQ - ISV Tech Docs</title>
       
     
     
@@ -91,7 +91,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#overview" tabindex="1" class="md-skip">
+      <a href="#tile-development-faq" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -201,13 +201,19 @@
         
   
   
+    
+    
+  
+  
     <li class="md-tabs__item">
       
-        <a href="../index.html" title="Tile Development" class="md-tabs__link md-tabs__link--active">
+        <a href="bosh_faq.html" title="Tile Development" class="md-tabs__link md-tabs__link--active">
           Tile Development
         </a>
       
     </li>
+  
+
   
 
       
@@ -336,28 +342,18 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../index.html" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
+  
 
 
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
     
-    <label class="md-nav__link" for="nav-3-2">
+    <label class="md-nav__link" for="nav-3-1">
       Common Issues and Helps
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-2">
+      <label class="md-nav__title" for="nav-3-1">
         Common Issues and Helps
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -369,19 +365,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../common_issues_helps/index.html" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../common_issues_helps/bosh_faq.html" title="BOSH FAQ" class="md-nav__link">
+    <a href="bosh_faq.html" title="BOSH FAQ" class="md-nav__link">
       BOSH FAQ
     </a>
   </li>
@@ -393,49 +377,11 @@
 
 
   <li class="md-nav__item">
-    <a href="../common_issues_helps/pas_for_windows_faq.html" title="PAS for Windows FAQ" class="md-nav__link">
+    <a href="pas_for_windows_faq.html" title="PAS for Windows FAQ" class="md-nav__link">
       PAS for Windows FAQ
     </a>
   </li>
 
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../common_issues_helps/tilegenerator_faq.html" title="Tile Generator FAQ" class="md-nav__link">
-      Tile Generator FAQ
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" checked>
-    
-    <label class="md-nav__link" for="nav-3-3">
-      Good Practices / Features for Tiles
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-3">
-        Good Practices / Features for Tiles
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
         
           
           
@@ -451,10 +397,58 @@
       
     
     
-    <a href="index.html" title="Overview" class="md-nav__link md-nav__link--active">
-      Overview
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tile Development FAQ
+      </label>
+    
+    <a href="tile_development_faq.html" title="Tile Development FAQ" class="md-nav__link md-nav__link--active">
+      Tile Development FAQ
     </a>
     
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#information-about-using-the-tile-generator-tool" title="Information about using the Tile-Generator tool" class="md-nav__link">
+    Information about using the Tile-Generator tool
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migrations-output-for-tile-upgrade" title="Migrations Output for Tile Upgrade" class="md-nav__link">
+    Migrations Output for Tile Upgrade
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-form-field-types-are-supported-in-apps-manager-for-on-demand-service-brokers-and-how-are-they-configured" title="What form field types are supported in Apps Manager for on-demand service brokers and how are they configured?" class="md-nav__link">
+    What form field types are supported in Apps Manager for on-demand service brokers and how are they configured?
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -463,8 +457,27 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Good Practices / Features for Tiles
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Good Practices / Features for Tiles
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="bbr.html" title="BOSH Backup and Restore (BBR)" class="md-nav__link">
+    <a href="../good_practices/bbr.html" title="BOSH Backup and Restore (BBR)" class="md-nav__link">
       BOSH Backup and Restore (BBR)
     </a>
   </li>
@@ -476,7 +489,7 @@
 
 
   <li class="md-nav__item">
-    <a href="secure-bindings-odb.html" title="Secure Bindings in On-Demand Broker" class="md-nav__link">
+    <a href="../good_practices/secure-bindings-odb.html" title="Secure Bindings in On-Demand Broker" class="md-nav__link">
       Secure Bindings in On-Demand Broker
     </a>
   </li>
@@ -593,6 +606,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#information-about-using-the-tile-generator-tool" title="Information about using the Tile-Generator tool" class="md-nav__link">
+    Information about using the Tile-Generator tool
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migrations-output-for-tile-upgrade" title="Migrations Output for Tile Upgrade" class="md-nav__link">
+    Migrations Output for Tile Upgrade
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-form-field-types-are-supported-in-apps-manager-for-on-demand-service-brokers-and-how-are-they-configured" title="What form field types are supported in Apps Manager for on-demand service brokers and how are they configured?" class="md-nav__link">
+    What form field types are supported in Apps Manager for on-demand service brokers and how are they configured?
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -604,7 +647,30 @@
               
                 
                 
-                <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
+                <h1 id="tile-development-faq">Tile Development FAQ<a class="headerlink" href="#tile-development-faq" title="Permanent link">&para;</a></h1>
+<h2 id="information-about-using-the-tile-generator-tool">Information about using the Tile-Generator tool<a class="headerlink" href="#information-about-using-the-tile-generator-tool" title="Permanent link">&para;</a></h2>
+<p><a href="https://docs.pivotal.io/tiledev">Tile Generator Docs</a></p>
+<h2 id="migrations-output-for-tile-upgrade">Migrations Output for Tile Upgrade<a class="headerlink" href="#migrations-output-for-tile-upgrade" title="Permanent link">&para;</a></h2>
+<p><a href="https://docs.pivotal.io/tiledev/tile-upgrades.html">Upgrading Tiles</a></p>
+<p>Defining a migration for your tile and where to look for the output from the <code>migration</code> block in the tile.yml</p>
+<p>Example</p>
+<pre><code>migration: |
+  console.log(&quot;#### example of migration print console.log&quot;)
+</code></pre>
+
+<p>SSH into OpsMan Director</p>
+<p>You can view the file <code>/var/log/opsmanger/production.log</code></p>
+<pre><code>I, [2019-06-13T11:30:48.924963 #866]  INFO -- : Valid UAA token
+I, [2019-06-13T11:30:49.436807 #866]  INFO -- : BEGIN: Javascript Product Data Migration /var/tempest/workspaces/default/product_data_migrations/tomcat-bosh-tile/0.0.57/201906130720_noop.js output
+I, [2019-06-13T11:30:49.436914 #866]  INFO -- : #### example of migration print console.log
+</code></pre>
+
+<h2 id="what-form-field-types-are-supported-in-apps-manager-for-on-demand-service-brokers-and-how-are-they-configured">What form field types are supported in Apps Manager for on-demand service brokers and how are they configured?<a class="headerlink" href="#what-form-field-types-are-supported-in-apps-manager-for-on-demand-service-brokers-and-how-are-they-configured" title="Permanent link">&para;</a></h2>
+<p>For general information please see the <a href="https://docs.pivotal.io/svc-sdk/odb/operating.html">On-Demand Services SDK</a> documentation. Note that as of this writing the <a href="https://docs.pivotal.io/svc-sdk/odb/adapter-reference.html#generate-plan-schemas">plan-schemas</a> use the <a href="http://json-schema.org">JSON Schema draft v4</a>. Although the <code>array</code> type is supported in the schema, Apps Manager does not support and thus does not render this type. If one requires the <code>array</code> type or other complicated forms we recommend documenting the JSON object layout you wish the customer to use and set the (enable_plan_schemas)[https://docs.pivotal.io/svc-sdk/odb/operating.html#plan-schemas] property to <code>false</code>. This will disable any Apps Manager validation and provide an option to a large text box for customers to input a JSON object under <code>Advanced Options</code>, see the pictures below.
+<br>
+<img alt="adv_options" src="img/adv_options.png" />
+<br>
+<img alt="enter_json" src="img/enter_json.png" /></p>
                 
                   
                 
