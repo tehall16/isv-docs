@@ -1,0 +1,716 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation related to Pivotal ISV Partners.">
+      
+      
+        <link rel="canonical" href="https://cf-platform-eng.github.io/isv-tech-hub/tile_development/common_issues_helps/tilegenerator_faq.html">
+      
+      
+        <meta name="author" content="Chris Decelles">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/pivotal_favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Tile Generator FAQ - ISV Tech Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="black" data-md-color-accent="white">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#tile-generator-faq" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span  class="md-header-nav__topic">
+            <svg style="padding-top: 20px; width: 200px; height: 36px;" class="pivotal-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 479.53 40.94"><title>ISV Tech Hub</title><g id="Layer_2" data-name="Layer 2"><g id="logo">
+              <path d="M38.77,6h-6.2V0h6.2Zm0,34.24H32.56V10.41h6.22Z" fill="white"/>
+              <path d="M74.67,10.41,66,36.18c-1.49,4.22-4.15,4.76-6.3,4.76-3.19,0-5.11-1.47-6.24-4.75l-7.22-21.4H43.39V10.41h7.45l7.44,24c.33,1,.53,1.63,1.43,1.63s1.13-.62,1.43-1.63l7.59-24Z" fill="white"/>
+              <path d="M90,10.41c8.05,0,13.66,5.31,13.66,12.92V28c0,7.6-5.61,12.92-13.66,12.92S76.32,35.62,76.32,28V23.33c0-7.61,5.62-12.92,13.67-12.92M90,36c4.81,0,7.8-3.64,7.8-8V23.33c0-4.37-3-8-7.8-8-5.1,0-7.8,3.64-7.8,8V28c0,4.37,2.82,8,7.8,8" fill="white"/>
+              <path d="M153.32,11.36A53.46,53.46,0,0,0,141.8,10c-8.17,0-13.24,5.15-13.24,13.45v3.27c0,8.3,5.07,13.53,13.24,13.53.19,0,1.64,0,2.3-.06v-5l-2.3.07c-4.45,0-7.43-3.43-7.43-8.53V23.44c0-5.09,3-8.52,7.43-8.52a43.88,43.88,0,0,1,6.09.38l.33.08V40.24h6.22V12.4c0-.53,0-.74-1.13-1" fill="white"/>
+              <rect x="160.44" width="6.22" height="40.24" fill="white"/>
+              <path d="M10.92,0H0V40.24H6.47V5.59h3.79c.81,0,1.49,0,2.18.06,5.61.1,8.35,2.33,8.35,6.69,0,.17,0,.29,0,.47,0,4-2.21,6.71-8.32,6.71H10.67c0,1.55,0,4.41,0,5.41.63,0,1.22.06,1.82.06,8.78,0,15-3.45,15-12.11,0-.17,0-.35,0-.52C27.44,3.38,20.69,0,10.92,0" fill="white"/>
+              <path d="M114.7,4v6.43h10.13v4.82H114.7V32.61c0,2.73,1.74,2.8,4.26,2.8h5.87v4.83h-7.94c-5.87,0-8.48-2.35-8.48-7.63V4.84Z" fill="white"/>
+              <path d="M169.52,37.64a2.6,2.6,0,1,1,2.6,2.6A2.61,2.61,0,0,1,169.52,37.64Zm2.6-2.25a2.23,2.23,0,1,0,2.22,2.24A2.24,2.24,0,0,0,172.12,35.39ZM171.55,39h-.31V36.19h.8c.72,0,1.06.33,1.06.86a.82.82,0,0,1-.58.8l.74,1.17h-.36l-.68-1.1-.67,0Zm.51-1.34c.46,0,.75-.24.75-.62s-.25-.6-.79-.6h-.48V37.7Z" fill="white"/>
+              <path d="M196.5,40.21V10.4h2.55V40.21Z" fill="white"/>
+              <path d="M204.81,36l1.66-1.92a12.15,12.15,0,0,0,9.29,4.33c6.12,0,7.87-3.39,7.87-5.94,0-8.76-17.88-4.2-17.88-14.61,0-4.88,4.38-8,9.79-8a12.8,12.8,0,0,1,10.1,4.2L223.94,16a10.68,10.68,0,0,0-8.54-3.76c-4,0-7,2.28-7,5.5,0,7.64,17.88,3.44,17.88,14.57,0,3.84-2.55,8.45-10.59,8.45A13.72,13.72,0,0,1,204.81,36Z" fill="white"/>
+              <path d="M241.6,40.21,229.4,10.4h2.95l10.81,27L254,10.4h3l-12.2,29.81Z" fill="white"/>
+              <path d="M280.53,40.21V12.73h-9.74V10.4h22.08v2.33h-9.75V40.21Z" fill="white"/>
+              <path d="M298.14,40.21V10.4h18.91v2.33H300.69v11h16.05v2.33H300.69v11.8h16.36v2.32Z" fill="white"/>
+              <path d="M322.24,25.33c0-9.16,6.66-15.42,15.1-15.42a13.44,13.44,0,0,1,10.86,5.27l-2.14,1.39a10.85,10.85,0,0,0-8.72-4.34c-7,0-12.42,5.32-12.42,13.1s5.41,13.09,12.42,13.09a10.84,10.84,0,0,0,8.72-4.33l2.14,1.34a13.36,13.36,0,0,1-10.86,5.32C328.9,40.75,322.24,34.49,322.24,25.33Z" fill="white"/>
+              <path d="M374.85,40.21V26H355.94V40.21h-2.55V10.4h2.55V23.72h18.91V10.4h2.59V40.21Z" fill="white"/>
+              <path d="M417.85,40.21V26H398.94V40.21h-2.55V10.4h2.55V23.72h18.91V10.4h2.59V40.21Z" fill="white"/>
+              <path d="M427.82,28.77V10.4h2.59V28.73c0,6,3.17,9.69,9,9.69s9-3.66,9-9.69V10.4h2.6V28.77c0,7.37-3.94,12-11.62,12S427.82,36.1,427.82,28.77Z" fill="white"/>
+              <path d="M458.48,40.21V10.4h12.25c5,0,8.22,2.91,8.22,7.6a6.79,6.79,0,0,1-5.23,6.84c3.17.49,5.81,3.8,5.81,7.33,0,5-3.22,8-8.54,8Zm17.79-21.94c0-3-2-5.54-5.86-5.54H461v11h9.38C474.26,23.76,476.27,21.35,476.27,18.27ZM476.85,32c0-3-2.1-5.9-6.26-5.9H461v11.8h9.56C474.53,37.89,476.85,35.61,476.85,32Z" fill="white"/>
+              </g></g>
+            </svg>
+            <doc style="font-weight: 100;">Documentation</doc>
+          </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../index.html" title="Overview" class="md-tabs__link">
+        Overview
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../partner_processes/index.html" title="Partner Processes" class="md-tabs__link">
+          Partner Processes
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../index.html" title="Tile Development" class="md-tabs__link md-tabs__link--active">
+          Tile Development
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../releases/pcf2_6.html" title="Releases" class="md-tabs__link">
+          Releases
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://cf-platform-eng.github.io/isv-tech-hub/" title="ISV Tech Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    ISV Tech Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Partner Processes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Partner Processes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../partner_processes/index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../partner_processes/tile_release_process.html" title="Tile Release Processes" class="md-nav__link">
+      Tile Release Processes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Tile Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Tile Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Common Issues and Helps
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Common Issues and Helps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="bosh_faq.html" title="BOSH FAQ" class="md-nav__link">
+      BOSH FAQ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pas_for_windows_faq.html" title="PAS for Windows FAQ" class="md-nav__link">
+      PAS for Windows FAQ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tile Generator FAQ
+      </label>
+    
+    <a href="tilegenerator_faq.html" title="Tile Generator FAQ" class="md-nav__link md-nav__link--active">
+      Tile Generator FAQ
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#migrations-output-for-tile-upgrade" title="Migrations Output for Tile Upgrade" class="md-nav__link">
+    Migrations Output for Tile Upgrade
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Good Practices / Features for Tiles
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        Good Practices / Features for Tiles
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../good_practices/index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../good_practices/bbr.html" title="BOSH Backup and Restore (BBR)" class="md-nav__link">
+      BOSH Backup and Restore (BBR)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../good_practices/secure-bindings-odb.html" title="Secure Bindings in On-Demand Broker" class="md-nav__link">
+      Secure Bindings in On-Demand Broker
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Releases
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Releases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../releases/pcf2_6.html" title="PCF 2.6 / PKS 1.5" class="md-nav__link">
+      PCF 2.6 / PKS 1.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../releases/pcf2_5.html" title="PCF 2.5 / PKS 1.4" class="md-nav__link">
+      PCF 2.5 / PKS 1.4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../releases/pcf2_4.html" title="PCF 2.4 / PKS 1.3" class="md-nav__link">
+      PCF 2.4 / PKS 1.3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../pie_environments.html" title="PIE Environments" class="md-nav__link">
+      PIE Environments
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../about.html" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#migrations-output-for-tile-upgrade" title="Migrations Output for Tile Upgrade" class="md-nav__link">
+    Migrations Output for Tile Upgrade
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="tile-generator-faq">Tile Generator FAQ<a class="headerlink" href="#tile-generator-faq" title="Permanent link">&para;</a></h1>
+<p><a href="https://docs.pivotal.io/tiledev">Tile Generator Docs</a></p>
+<h2 id="migrations-output-for-tile-upgrade">Migrations Output for Tile Upgrade<a class="headerlink" href="#migrations-output-for-tile-upgrade" title="Permanent link">&para;</a></h2>
+<p><a href="https://docs.pivotal.io/tiledev/tile-upgrades.html">Upgrading Tiles</a></p>
+<p>Defining a migration for your tile and where to look for the output from the <code>migration</code> block in the tile.yml</p>
+<p>Example</p>
+<pre><code>migration: |
+  console.log(&quot;#### example of migration print console.log&quot;)
+</code></pre>
+
+<p>SSH into OpsMan Director</p>
+<p>You can view the file <code>/var/log/opsmanger/production.log</code></p>
+<pre><code>I, [2019-06-13T11:30:48.924963 #866]  INFO -- : Valid UAA token
+I, [2019-06-13T11:30:49.436807 #866]  INFO -- : BEGIN: Javascript Product Data Migration /var/tempest/workspaces/default/product_data_migrations/tomcat-bosh-tile/0.0.57/201906130720_noop.js output
+I, [2019-06-13T11:30:49.436914 #866]  INFO -- : #### example of migration print console.log
+</code></pre>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            ISV Tech Hub Documentation &copy; 2019
+
+
+            <a href='https://pivotal.io' target="_blank">Pivotal Software</a>, Inc. All Rights Reserved.
+            &nbsp;&nbsp;<a href='https://pivotal.io/privacy-policy'  target="_blank">Privacy Policy</a> |
+            <a href='https://pivotal.io/terms-of-use'  target="_blank">Terms of Use</a>
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

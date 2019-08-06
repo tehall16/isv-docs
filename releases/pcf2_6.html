@@ -1,0 +1,992 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation related to Pivotal ISV Partners.">
+      
+      
+        <link rel="canonical" href="https://cf-platform-eng.github.io/isv-tech-hub/releases/pcf2_6.html">
+      
+      
+        <meta name="author" content="Chris Decelles">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/pivotal_favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>PCF 2.6 / PKS 1.5 - ISV Tech Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.01803549.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="black" data-md-color-accent="white">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#pcf-26-pks-15" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span  class="md-header-nav__topic">
+            <svg style="padding-top: 20px; width: 200px; height: 36px;" class="pivotal-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 479.53 40.94"><title>ISV Tech Hub</title><g id="Layer_2" data-name="Layer 2"><g id="logo">
+              <path d="M38.77,6h-6.2V0h6.2Zm0,34.24H32.56V10.41h6.22Z" fill="white"/>
+              <path d="M74.67,10.41,66,36.18c-1.49,4.22-4.15,4.76-6.3,4.76-3.19,0-5.11-1.47-6.24-4.75l-7.22-21.4H43.39V10.41h7.45l7.44,24c.33,1,.53,1.63,1.43,1.63s1.13-.62,1.43-1.63l7.59-24Z" fill="white"/>
+              <path d="M90,10.41c8.05,0,13.66,5.31,13.66,12.92V28c0,7.6-5.61,12.92-13.66,12.92S76.32,35.62,76.32,28V23.33c0-7.61,5.62-12.92,13.67-12.92M90,36c4.81,0,7.8-3.64,7.8-8V23.33c0-4.37-3-8-7.8-8-5.1,0-7.8,3.64-7.8,8V28c0,4.37,2.82,8,7.8,8" fill="white"/>
+              <path d="M153.32,11.36A53.46,53.46,0,0,0,141.8,10c-8.17,0-13.24,5.15-13.24,13.45v3.27c0,8.3,5.07,13.53,13.24,13.53.19,0,1.64,0,2.3-.06v-5l-2.3.07c-4.45,0-7.43-3.43-7.43-8.53V23.44c0-5.09,3-8.52,7.43-8.52a43.88,43.88,0,0,1,6.09.38l.33.08V40.24h6.22V12.4c0-.53,0-.74-1.13-1" fill="white"/>
+              <rect x="160.44" width="6.22" height="40.24" fill="white"/>
+              <path d="M10.92,0H0V40.24H6.47V5.59h3.79c.81,0,1.49,0,2.18.06,5.61.1,8.35,2.33,8.35,6.69,0,.17,0,.29,0,.47,0,4-2.21,6.71-8.32,6.71H10.67c0,1.55,0,4.41,0,5.41.63,0,1.22.06,1.82.06,8.78,0,15-3.45,15-12.11,0-.17,0-.35,0-.52C27.44,3.38,20.69,0,10.92,0" fill="white"/>
+              <path d="M114.7,4v6.43h10.13v4.82H114.7V32.61c0,2.73,1.74,2.8,4.26,2.8h5.87v4.83h-7.94c-5.87,0-8.48-2.35-8.48-7.63V4.84Z" fill="white"/>
+              <path d="M169.52,37.64a2.6,2.6,0,1,1,2.6,2.6A2.61,2.61,0,0,1,169.52,37.64Zm2.6-2.25a2.23,2.23,0,1,0,2.22,2.24A2.24,2.24,0,0,0,172.12,35.39ZM171.55,39h-.31V36.19h.8c.72,0,1.06.33,1.06.86a.82.82,0,0,1-.58.8l.74,1.17h-.36l-.68-1.1-.67,0Zm.51-1.34c.46,0,.75-.24.75-.62s-.25-.6-.79-.6h-.48V37.7Z" fill="white"/>
+              <path d="M196.5,40.21V10.4h2.55V40.21Z" fill="white"/>
+              <path d="M204.81,36l1.66-1.92a12.15,12.15,0,0,0,9.29,4.33c6.12,0,7.87-3.39,7.87-5.94,0-8.76-17.88-4.2-17.88-14.61,0-4.88,4.38-8,9.79-8a12.8,12.8,0,0,1,10.1,4.2L223.94,16a10.68,10.68,0,0,0-8.54-3.76c-4,0-7,2.28-7,5.5,0,7.64,17.88,3.44,17.88,14.57,0,3.84-2.55,8.45-10.59,8.45A13.72,13.72,0,0,1,204.81,36Z" fill="white"/>
+              <path d="M241.6,40.21,229.4,10.4h2.95l10.81,27L254,10.4h3l-12.2,29.81Z" fill="white"/>
+              <path d="M280.53,40.21V12.73h-9.74V10.4h22.08v2.33h-9.75V40.21Z" fill="white"/>
+              <path d="M298.14,40.21V10.4h18.91v2.33H300.69v11h16.05v2.33H300.69v11.8h16.36v2.32Z" fill="white"/>
+              <path d="M322.24,25.33c0-9.16,6.66-15.42,15.1-15.42a13.44,13.44,0,0,1,10.86,5.27l-2.14,1.39a10.85,10.85,0,0,0-8.72-4.34c-7,0-12.42,5.32-12.42,13.1s5.41,13.09,12.42,13.09a10.84,10.84,0,0,0,8.72-4.33l2.14,1.34a13.36,13.36,0,0,1-10.86,5.32C328.9,40.75,322.24,34.49,322.24,25.33Z" fill="white"/>
+              <path d="M374.85,40.21V26H355.94V40.21h-2.55V10.4h2.55V23.72h18.91V10.4h2.59V40.21Z" fill="white"/>
+              <path d="M417.85,40.21V26H398.94V40.21h-2.55V10.4h2.55V23.72h18.91V10.4h2.59V40.21Z" fill="white"/>
+              <path d="M427.82,28.77V10.4h2.59V28.73c0,6,3.17,9.69,9,9.69s9-3.66,9-9.69V10.4h2.6V28.77c0,7.37-3.94,12-11.62,12S427.82,36.1,427.82,28.77Z" fill="white"/>
+              <path d="M458.48,40.21V10.4h12.25c5,0,8.22,2.91,8.22,7.6a6.79,6.79,0,0,1-5.23,6.84c3.17.49,5.81,3.8,5.81,7.33,0,5-3.22,8-8.54,8Zm17.79-21.94c0-3-2-5.54-5.86-5.54H461v11h9.38C474.26,23.76,476.27,21.35,476.27,18.27ZM476.85,32c0-3-2.1-5.9-6.26-5.9H461v11.8h9.56C474.53,37.89,476.85,35.61,476.85,32Z" fill="white"/>
+              </g></g>
+            </svg>
+            <doc style="font-weight: 100;">Documentation</doc>
+          </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../index.html" title="Overview" class="md-tabs__link">
+        Overview
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../partner_processes/index.html" title="Partner Processes" class="md-tabs__link">
+          Partner Processes
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../tile_development/index.html" title="Tile Development" class="md-tabs__link">
+          Tile Development
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="pcf2_6.html" title="Releases" class="md-tabs__link md-tabs__link--active">
+          Releases
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://cf-platform-eng.github.io/isv-tech-hub/" title="ISV Tech Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    ISV Tech Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Partner Processes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Partner Processes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../partner_processes/index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../partner_processes/tile_release_process.html" title="Tile Release Processes" class="md-nav__link">
+      Tile Release Processes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Tile Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Tile Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tile_development/index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Common Issues and Helps
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Common Issues and Helps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tile_development/common_issues_helps/index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tile_development/common_issues_helps/bosh_faq.html" title="BOSH FAQ" class="md-nav__link">
+      BOSH FAQ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tile_development/common_issues_helps/pas_for_windows_faq.html" title="PAS for Windows FAQ" class="md-nav__link">
+      PAS for Windows FAQ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tile_development/common_issues_helps/tilegenerator_faq.html" title="Tile Generator FAQ" class="md-nav__link">
+      Tile Generator FAQ
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Good Practices / Features for Tiles
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        Good Practices / Features for Tiles
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tile_development/good_practices/index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tile_development/good_practices/bbr.html" title="BOSH Backup and Restore (BBR)" class="md-nav__link">
+      BOSH Backup and Restore (BBR)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tile_development/good_practices/secure-bindings-odb.html" title="Secure Bindings in On-Demand Broker" class="md-nav__link">
+      Secure Bindings in On-Demand Broker
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Releases
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Releases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        PCF 2.6 / PKS 1.5
+      </label>
+    
+    <a href="pcf2_6.html" title="PCF 2.6 / PKS 1.5" class="md-nav__link md-nav__link--active">
+      PCF 2.6 / PKS 1.5
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pcf-26-changes" title="PCF 2.6 Changes" class="md-nav__link">
+    PCF 2.6 Changes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-ga-features" title="New GA Features" class="md-nav__link">
+    New GA Features
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ops-manager" title="Ops Manager" class="md-nav__link">
+    Ops Manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pas" title="PAS" class="md-nav__link">
+    PAS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beta-features" title="Beta Features" class="md-nav__link">
+    Beta Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#odb-sdk-changes" title="ODB SDK Changes" class="md-nav__link">
+    ODB SDK Changes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#odb-sdk-recreate-all-services-instances-errand" title="ODB SDK Recreate All Services Instances Errand" class="md-nav__link">
+    ODB SDK Recreate All Services Instances Errand
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upcoming-deprecations" title="Upcoming Deprecations" class="md-nav__link">
+    Upcoming Deprecations
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-spring-boot-10-app-brokers-to-spring-boot-20-upgrade-spring-boot-1-0-app-brokers-to-spring-boot-2-0" title="Upgrade Spring Boot 1.0 App Brokers to Spring Boot 2.0 {#upgrade-spring-boot-1-0-app-brokers-to-spring-boot-2-0}" class="md-nav__link">
+    Upgrade Spring Boot 1.0 App Brokers to Spring Boot 2.0 {#upgrade-spring-boot-1-0-app-brokers-to-spring-boot-2-0}
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metron-agent-eventually-going-away" title="Metron Agent Eventually Going Away" class="md-nav__link">
+    Metron Agent Eventually Going Away
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-uaa-client-credentials-instead-of-admin-users" title="Use UAA Client Credentials Instead of Admin Users" class="md-nav__link">
+    Use UAA Client Credentials Instead of Admin Users
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pks-15-changes" title="PKS 1.5 Changes" class="md-nav__link">
+    PKS 1.5 Changes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-pivotal-product-announcements" title="Other Pivotal Product Announcements" class="md-nav__link">
+    Other Pivotal Product Announcements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions" title="Questions?" class="md-nav__link">
+    Questions?
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pcf2_5.html" title="PCF 2.5 / PKS 1.4" class="md-nav__link">
+      PCF 2.5 / PKS 1.4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pcf2_4.html" title="PCF 2.4 / PKS 1.3" class="md-nav__link">
+      PCF 2.4 / PKS 1.3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../pie_environments.html" title="PIE Environments" class="md-nav__link">
+      PIE Environments
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../about.html" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pcf-26-changes" title="PCF 2.6 Changes" class="md-nav__link">
+    PCF 2.6 Changes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-ga-features" title="New GA Features" class="md-nav__link">
+    New GA Features
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ops-manager" title="Ops Manager" class="md-nav__link">
+    Ops Manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pas" title="PAS" class="md-nav__link">
+    PAS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beta-features" title="Beta Features" class="md-nav__link">
+    Beta Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#odb-sdk-changes" title="ODB SDK Changes" class="md-nav__link">
+    ODB SDK Changes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#odb-sdk-recreate-all-services-instances-errand" title="ODB SDK Recreate All Services Instances Errand" class="md-nav__link">
+    ODB SDK Recreate All Services Instances Errand
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upcoming-deprecations" title="Upcoming Deprecations" class="md-nav__link">
+    Upcoming Deprecations
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-spring-boot-10-app-brokers-to-spring-boot-20-upgrade-spring-boot-1-0-app-brokers-to-spring-boot-2-0" title="Upgrade Spring Boot 1.0 App Brokers to Spring Boot 2.0 {#upgrade-spring-boot-1-0-app-brokers-to-spring-boot-2-0}" class="md-nav__link">
+    Upgrade Spring Boot 1.0 App Brokers to Spring Boot 2.0 {#upgrade-spring-boot-1-0-app-brokers-to-spring-boot-2-0}
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metron-agent-eventually-going-away" title="Metron Agent Eventually Going Away" class="md-nav__link">
+    Metron Agent Eventually Going Away
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-uaa-client-credentials-instead-of-admin-users" title="Use UAA Client Credentials Instead of Admin Users" class="md-nav__link">
+    Use UAA Client Credentials Instead of Admin Users
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pks-15-changes" title="PKS 1.5 Changes" class="md-nav__link">
+    PKS 1.5 Changes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-pivotal-product-announcements" title="Other Pivotal Product Announcements" class="md-nav__link">
+    Other Pivotal Product Announcements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions" title="Questions?" class="md-nav__link">
+    Questions?
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="pcf-26-pks-15">PCF 2.6 / PKS 1.5<a class="headerlink" href="#pcf-26-pks-15" title="Permanent link">&para;</a></h1>
+<p>Hello Pivotal Partners,</p>
+<ul>
+<li>PCF 2.6 is scheduled for release in June</li>
+<li>PKS 1.5 is scheduled for release in July</li>
+</ul>
+<p>With this release, we have a handful of changes that require attention from tile authors.</p>
+<p>PAS releases 2.3 will move to End of General Support (EOGS) with this release.</p>
+<h2 id="pcf-26-changes">PCF 2.6 Changes<a class="headerlink" href="#pcf-26-changes" title="Permanent link">&para;</a></h2>
+<h3 id="new-ga-features">New GA Features<a class="headerlink" href="#new-ga-features" title="Permanent link">&para;</a></h3>
+<h4 id="ops-manager">Ops Manager<a class="headerlink" href="#ops-manager" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>[New Feature]</strong>: BPM support in bosh, available in this Ops Manager.</li>
+<li><strong>[New Feature]</strong>: Drain Lifecycle updates to help improve deployment orchestration.</li>
+<li><strong>[New Feature]</strong>: Operators using a Service Broker (SB) should be able to see the SB logs in OM’s syslog via runtime config.</li>
+<li><strong>[New Feature]</strong>: Ops Manager API users can now call an endpoint to receive a list of required fields for product configuration.</li>
+<li><strong>[New Feature]: </strong>Multiple stemcells per tile is now possible, <em>however, Tile Generator does not yet support this.</em></li>
+</ul>
+<h4 id="pas">PAS<a class="headerlink" href="#pas" title="Permanent link">&para;</a></h4>
+<h3 id="beta-features">Beta Features<a class="headerlink" href="#beta-features" title="Permanent link">&para;</a></h3>
+<ul>
+<li>App Developers can easily rollback to an app revision from a specific point in time.</li>
+<li>Operators can now obtain additional IAAS VM metrics via the Loggregator Firehose.</li>
+<li>App Operators can set up more than 10k syslog drains.</li>
+<li>Sidecar support for Diego Cell based applications.  <a href="https://www.cloudfoundry.org/blog/how-to-push-an-app-to-cloud-foundry-with-sidecars/">See CF Blog</a>.</li>
+</ul>
+<h3 id="odb-sdk-changes">ODB SDK Changes<a class="headerlink" href="#odb-sdk-changes" title="Permanent link">&para;</a></h3>
+<p>The latest version of the <a href="https://github.com/pivotal-cf/on-demand-service-broker-release/releases/tag/v0.29.1">ODB SDK (v0.29.1)</a> has been released.  </p>
+<h4 id="odb-sdk-recreate-all-services-instances-errand">ODB SDK Recreate All Services Instances Errand<a class="headerlink" href="#odb-sdk-recreate-all-services-instances-errand" title="Permanent link">&para;</a></h4>
+<p>When an Ops Manager root CA is rotated and new non-configurable certificates are generated, OpsManager can force a recreate of BOSH VMs so that they will contain the new root CA. However, it has no knowledge of VMs created by On-Demand Brokers.</p>
+<p>In order to recreate these Service Instance VMs behind On-Demand Brokers, it was decided that we would provide a new errand called Recreate All Service Instances on the ODB release. That errand would re-create all the VMs created by ODB in order to force the CA certificate rotation.</p>
+<p>If you are running on an older release of the ODB SDK, please upgrade to the latest release to take advantage of these features.</p>
+<h3 id="upcoming-deprecations">Upcoming Deprecations<a class="headerlink" href="#upcoming-deprecations" title="Permanent link">&para;</a></h3>
+<h4 id="upgrade-spring-boot-10-app-brokers-to-spring-boot-20-upgrade-spring-boot-1-0-app-brokers-to-spring-boot-2-0">Upgrade Spring Boot 1.0 App Brokers to Spring Boot 2.0 {#upgrade-spring-boot-1-0-app-brokers-to-spring-boot-2-0}<a class="headerlink" href="#upgrade-spring-boot-10-app-brokers-to-spring-boot-20-upgrade-spring-boot-1-0-app-brokers-to-spring-boot-2-0" title="Permanent link">&para;</a></h4>
+<p><a href="https://spring.io/blog/2018/07/30/spring-boot-1-x-eol-aug-1st-2019">Spring Boot 1.0 EOL is coming August 1, 2019</a>.  Any apps or app brokers should be updated to Spring Boot 2.0 to stay current with security patches and general support by the Spring Team.</p>
+<h4 id="metron-agent-eventually-going-away">Metron Agent Eventually Going Away<a class="headerlink" href="#metron-agent-eventually-going-away" title="Permanent link">&para;</a></h4>
+<p>The loggregator-agent release is the new drop-in replacement to replace metron.  In PAS 2.5, metron agent will disappear and you will have to update your BOSH manifest to use the <a href="https://bosh.io/releases/github.com/cloudfoundry/loggregator-agent-release?all=1">loggregator-agent release</a> instead.</p>
+<h4 id="use-uaa-client-credentials-instead-of-admin-users">Use UAA Client Credentials Instead of Admin Users<a class="headerlink" href="#use-uaa-client-credentials-instead-of-admin-users" title="Permanent link">&para;</a></h4>
+<p>The introduction of <code>cf auth --client-credentials</code> allows components using <code>cloud_controller.admin</code> to leverage a client instead of a user. PCF 2.5 will include a set of <code>tile_installer_client</code> credentials to bootstrap client credentials for long-term use, instead of using shared admin-level credentials.</p>
+<p>The benefits of this include supporting customers who need to use two-factor authentication for users, disabling internal users to meet compliance regulations, and better support for credential rotation.</p>
+<p>As the details of this develop, we plan to enhance Tile Generator to help make this process smoother. In the meantime, if you would like more information, please reach out to us in Pivotal Partners Slack.</p>
+<h2 id="pks-15-changes">PKS 1.5 Changes<a class="headerlink" href="#pks-15-changes" title="Permanent link">&para;</a></h2>
+<p>PKS is scheduled for release in July 2019.</p>
+<p>Turnkey solution</p>
+<p>Windows based workloads</p>
+<p>Multi-cluster/ Fleet Management</p>
+<p>Granular Upgrades</p>
+<p>Leverage SAML for authentication</p>
+<p>Observability</p>
+<p>Monitor namespace through metrics sink</p>
+<p>Platform Resilience &amp; High Availability</p>
+<p>Highly Available UAA</p>
+<p>Enterprise Security &amp; Networking</p>
+<p>K8s Ingress leveraging Istio</p>
+<p>Conformance</p>
+<p>Kubernetes V1.14.x</p>
+<h2 id="other-pivotal-product-announcements">Other Pivotal Product Announcements<a class="headerlink" href="#other-pivotal-product-announcements" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Concourse 5.1 released as GA</li>
+<li>Spring Boot 1.0 will be <a href="https://spring.io/blog/2018/07/30/spring-boot-1-x-eol-aug-1st-2019">deprecated</a> August 1, 2019</li>
+</ul>
+<h2 id="questions">Questions?<a class="headerlink" href="#questions" title="Permanent link">&para;</a></h2>
+<p>Reach out to us on the Pivotal Partner Slack Team</p>
+<p><strong>Forward Looking Statement.</strong> This contains statements relating to Pivotal’s expectations, projections, beliefs and prospects which are "forward-looking statements” within the meaning of the federal securities laws and by their nature are uncertain. Words such as "believe," "may," "will," "estimate," "continue," "anticipate," "intend," "expect," "plans," and similar expressions are intended to identify forward-looking statements. Such forward-looking statements are not guarantees of future performance, and you are cautioned not to place undue reliance on these forward-looking statements. Actual results could differ materially from those projected in the forward-looking statements as a result of many factors, including but not limited to: (i) our limited operating history as an independent company, which makes it difficult to evaluate our prospects; (ii) the substantial losses we have incurred and the risks of not being able to generate sufficient revenue to achieve and sustain profitability; (iii) our future success depending in large part on the growth of our target markets; (iv) our future growth depending largely on Pivotal Cloud Foundry and our platform-related services; (v) our subscription revenue growth rate not being indicative of our future performance or ability to grow; (vi) our business and prospects being harmed if our customers do not renew their subscriptions or expand their use of our platform; (vii) any failure by us to compete effectively; (viii) our long and unpredictable sales cycles that vary seasonally and which can cause significant variation in the number and size of transactions that can close in a particular quarter; (ix) our lack of control of and inability to predict the future course of open-source technologies, including those used in Pivotal Cloud Foundry; and (x) any security or privacy breaches. All information set forth in this release is current as of the date of this release. These forward-looking statements are based on current expectations and are subject to uncertainties, risks, assumptions, and changes in condition, significance, value and effect as well as other risks disclosed previously and from time to time in documents filed by us with the U.S. Securities and Exchange Commission (SEC), including our prospectus dated April 19, 2018, and filed pursuant to Rule 424(b) under the U.S. Securities Act of 1933, as amended. Additional information will be made available in our quarterly report on Form 10-Q and other future reports that we may file with the SEC, which could cause actual results to vary from expectations. We disclaim any obligation to, and do not currently intend to, update any such forward-looking statements, whether written or oral, that may be made from time to time except as required by law.”</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            ISV Tech Hub Documentation &copy; 2019
+
+
+            <a href='https://pivotal.io' target="_blank">Pivotal Software</a>, Inc. All Rights Reserved.
+            &nbsp;&nbsp;<a href='https://pivotal.io/privacy-policy'  target="_blank">Privacy Policy</a> |
+            <a href='https://pivotal.io/terms-of-use'  target="_blank">Terms of Use</a>
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.245445c6.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
