@@ -36,6 +36,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://cf-platform-eng.github.io/isv-docs/tile_development/good_practices/opsmanager_syslog.html</loc>
+     <lastmod>2019-08-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://cf-platform-eng.github.io/isv-docs/tile_development/good_practices/secure-bindings-odb.html</loc>
      <lastmod>2019-08-08</lastmod>
      <changefreq>daily</changefreq>
