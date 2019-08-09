@@ -42,7 +42,7 @@
     
     
       
-        <title>PIE Environments - ISV Docs</title>
+        <title>Pivotal Integration Environments (PIE) - ISV Docs</title>
       
     
     
@@ -93,7 +93,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#pie-environments" tabindex="1" class="md-skip">
+      <a href="#pivotal-integration-environments-pie" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -557,9 +557,52 @@
       
     
     
-    <a href="pie_environments.html" title="PIE Environments" class="md-nav__link md-nav__link--active">
-      PIE Environments
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Pivotal Integration Environments (PIE)
+      </label>
+    
+    <a href="pie_environments.html" title="Pivotal Integration Environments (PIE)" class="md-nav__link md-nav__link--active">
+      Pivotal Integration Environments (PIE)
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pivotal-container-service-pks" title="Pivotal Container Service (PKS)" class="md-nav__link">
+    Pivotal Container Service (PKS)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pivotal-application-service-pas" title="Pivotal Application Service (PAS)" class="md-nav__link">
+    Pivotal Application Service (PAS)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions" title="Questions?" class="md-nav__link">
+    Questions?
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -593,6 +636,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pivotal-container-service-pks" title="Pivotal Container Service (PKS)" class="md-nav__link">
+    Pivotal Container Service (PKS)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pivotal-application-service-pas" title="Pivotal Application Service (PAS)" class="md-nav__link">
+    Pivotal Application Service (PAS)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions" title="Questions?" class="md-nav__link">
+    Questions?
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -606,7 +679,34 @@
                   <a href="https://github.com/cf-platform-eng/isv-docs/edit/master/content/pie_environments.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="pie-environments">PIE Environments<a class="headerlink" href="#pie-environments" title="Permanent link">&para;</a></h1>
+                <h1 id="pivotal-integration-environments-pie">Pivotal Integration Environments (PIE)<a class="headerlink" href="#pivotal-integration-environments-pie" title="Permanent link">&para;</a></h1>
+<p>Pivotal operates and manages a number of shared Pivotal Platform development environments,
+called Pivotal Integration Environments (PIEs),
+for Pivotal Technical Partnership Program (PTPP) program members to develop their integrations.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>PIEs are meant for development purposes only.
+While we strive to keep them up and running for development, they are operated at a <em>best effort</em> service level,
+and we strongly advise against using these environments for customer demos and other such purposes.</p>
+</div>
+<h2 id="pivotal-container-service-pks">Pivotal Container Service (PKS)<a class="headerlink" href="#pivotal-container-service-pks" title="Permanent link">&para;</a></h2>
+<p>To develop an integration with PKS, Pivotal can provide you with a dedicated PKS Kubernetes cluster.
+If you would like a development cluster, please fill out the
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeM9Bopf8_PEc3CExuKn5XW-5BPvobGufbLtA6Gg7Zxn_d1rA/viewform">PKS Kubernetes Cluster request form</a>.
+Once we process your request, we will send you access information via <a href="https://pivotalpartners.slack.com/">Pivotal Partner Slack</a>.</p>
+<h2 id="pivotal-application-service-pas">Pivotal Application Service (PAS)<a class="headerlink" href="#pivotal-application-service-pas" title="Permanent link">&para;</a></h2>
+<p>To develop a PAS integration, Pivotal will provide you with shared access to an environment.
+To use your assigned PAS environment:</p>
+<ol>
+<li>Log in to the Pivotal <a href="https://tile-dashboard.cfapps.io/">Tile Dashboard</a>
+using the credentials that you use for <a href="https://pivotalpartners.slack.com/">Pivotal Partners Slack</a>.</li>
+<li>Click the <code>pie-xx</code> environment assigned to you.</li>
+<li>Log in to Ops Manager with the given Ops Manager URL and credentials.</li>
+<li>Log in to Apps Manager or the cf CLI with the Cloud Foundry information provided on the same page.</li>
+</ol>
+<h2 id="questions">Questions?<a class="headerlink" href="#questions" title="Permanent link">&para;</a></h2>
+<p>If you are not in the PTPP or cannot access <a href="https://pivotalpartners.slack.com/">Pivotal Partners Slack</a>,
+email <a href="mailto:isv@pivotal.io">isv@pivotal.io</a>.</p>
                 
                   
                 
