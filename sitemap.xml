@@ -6,16 +6,6 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://cf-platform-eng.github.io/isv-docs/partner_processes/index.html</loc>
-     <lastmod>2019-08-13</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://cf-platform-eng.github.io/isv-docs/partner_processes/tile_release_process.html</loc>
-     <lastmod>2019-08-13</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://cf-platform-eng.github.io/isv-docs/tile_development/common_issues_helps/bosh_faq.html</loc>
      <lastmod>2019-08-13</lastmod>
      <changefreq>daily</changefreq>
